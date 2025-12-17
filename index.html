@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="description" content="Being Adolph Gasser">
+    <meta name="author" content="Erika Belanich">
+    <title>Being Adolph Gasser</title>
+ 
+       <link rel="icon" href="favicon-1.png" type="image/x-icon">
+    
+    <!-- Fonts & Styles -->  
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Bootstrap and jQuery (for demonstration) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        @media (max-width: 768px) {
+            .container-home {
+                display: flex;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                margin: 0 auto;
+            }
+        }
+        @media (min-width: 768px) {
+            .container-home {
+                display: flex;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .text-column {
+            flex: 1;
+            padding: 25px;
+        }
+        .text-column h1 {
+            margin-top: 0;
+        }
+        .text-column p {
+            margin-bottom: 0;
+        }
+        .image-column {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+        .image-column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+    .image-single {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+        .image-single img {
+            max-width: 100%;
+            height: auto;
+        }
+
+@media (min-width: 768px) {
+   .image-single img {
+            max-width: 60%;
+            height: auto;
+            }
+        }
+        
+
+#controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+#start-music {
+     font-family: "Montserrat", sans-serif;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-music:hover {
+color: darkgrey;
+}
+        
+#music-icon:hover {
+color: darkgrey;
+}
+        
+#music-icon {
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#music-icon i {
+    display: none;
+}
+
+#music-icon i.active {
+    display: inline;
+}
+        
+    </style>
+    
+</head>
+
+<body>
+  <div id="loading-overlay"></div>
+  <div id="loading-spinner">
+    <img src="homepage.gif" alt="Loading">
+  </div>
+
+
+
+
+ <!-- Navigation -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="https://www.beingadolphgasser.com/">TAURUS ENTERTAINMENT</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="https://www.beingadolphgasser.com/">HOME</a></li>
+                     <li><a href="/festivals/" class="link">FILM FESTIVALS</a></li>
+                    <li><a href="https://spectrum.rosco.com/lighting-the-documentary-being-adolph-gasser" class="link">BLOG</a></li> 
+                    <li><a href="/bios/" class="link">BIOS</a></li>
+                    
+<!-- HIDDEN DONATE   
+                 <li><a href="https://igg.me/at/BeingAdolphGasser/x/37984458#/" class="link">DONATE</a></li>
+-->
+                    
+                    <!-- HIDDEN DROPDOWN             
+<li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="#">ARTICLES</a></li>
+        <li><a href="#">ARCHIVES</a></li>
+        <li><a href="#">AWARDS</a></li>
+        <li><a href="#">FILM FESTIVALS</a></li>
+    </ul>
+</li>
+    -->
+                    <li><a href="/updates/" class="link">UPDATES</a></li>
+
+                    <li><a href="/contact/" class="link">CONTACT</a></li>
+                     <li class="socialmedia-icons">   
+                    <li class="special-items"><a href="https://www.facebook.com/beingadolphgasser"><i class="fab fa-facebook"></i></a></li>
+                    <li class="special-items"><a href="https://www.instagram.com/beingadolphgasser"><i class="fab fa-instagram"></i></a></li>
+                    <li class="special-items"><a href="https://x.com/BeingAdolphFilm"><i class="fab fa-twitter"></i></a></li>
+                
+                </li> </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+ <!-- MUSIC -->
+ <div id="controls">
+        <button id="start-music" onclick="startMusic()">Start Music</button>
+        <div id="music-icon" onclick="toggleMute()">
+            <i id="unmuted-icon" class="fas fa-volume-up active"></i>
+            <i id="muted-icon" class="fas fa-volume-mute"></i>
+        </div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="Beneath-the-Starry-Night.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    
+<!-- COVER VIDEO -->   
+<div class="video-container">
+    <video autoplay muted loop class="background-video">
+        <source src="HomeCover.mp4" type="video/mp4">
+        Your browser does not support the video tag.      
+    </video>
+    <video autoplay muted loop class="background-video-mobile">
+        <source src="Mobile-Home.mp4" type="video/mp4">
+        Your browser does not support the video tag.      
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Biography, Documentary, Filmmaking, Photography, WWII</h2>
+        <h1>Being Adolph Gasser</h1>
+        <p></p>
+    
+<br/>
+
+<a href="/trailer/" class="link">
+            <button class="cta-button">   Play Trailer   </button>
+        </a>
+
+
+
+        
+    </div>
+</div>
+
+    <!-- CAROUSEL -->  
+    <div class="owl-carousel owl-theme">
+
+        <div class="item">
+        <img src="Wedding.png" alt="Adolph and Marion's Wedding Day">
+                  <div class="overlay">1965 - Adolph and Marion's wedding ceremony at Ansel Adam's residence.<br></div>
+        </div>
+        <div class="item">
+            <img src="Gasser.png" alt="Early 1990s">
+              <div class="overlay">Early 1990s - Adolph in front of an Arriflex 35mm camera with employees at the Rental Store.</div>
+        </div>
+        <div class="item">
+            <img src="Aliano.png" alt="Start of filming">
+                <div class="overlay">2003  - John Aliano starts filming Adolph Gasser documentary.</div>
+        </div>
+   
+        <div class="item">
+            <img src="EnolaGay.png" alt="Adolph in front of Enola Gay">
+              <div class="overlay">1945 - Adolph with 509th photo squad buddy in front of Enola Gay.<br></div>
+        </div>
+          
+        <div class="item">
+            <img src="StoreFront.png" alt="Store front">
+            <div class="overlay">Store front of Adolph Gasser Inc.<br></div>
+        </div>
+    </div>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 0,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                autoplaySpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- BODY CONTENT -->      
+
+
+     <!-- FIRST ROW HIDDEN
+   <div class="container-home">
+   <div class="image-column">
+    <img src="ScreeningPoster.jpg" alt="premiere">
+  </div>
+
+
+      <div class="text-column">
+  <h1 id="unique-title">Premiering September 20, 2025</h1>
+    <p>
+The day has come. Tickets can now be purchased for the exhibition screening of the feature documentary Being Adolph Gasser. You can see the film poster listed and purchase tickets on the Rafael Film Center website linked below.
+        A huge thank you to the cast, 
+                        crew and various sponsors of this independent film more than 20 years in the making. Mark your calendars, September 20th at 7pm!<br><br>
+        
+        <br><br><a href="https://rafaelfilm.cafilm.org/being-adolph-gasser/" class="text-link" target="_blank">Purchase Tickets &rarr;</a></p>
+  </div>
+ 
+</div>   -->  
+
+
+           
+ <div class="container-home">
+
+   <div class="image-single">
+      <img src="Posters.png" alt="Posters">
+  </div>
+     
+
+                
+</div>   
+
+
+    
+    
+       
+ <div class="container-home">
+
+   <div class="image-column">
+      <img src="synopsis.png" alt="synopsis">
+  </div>
+     
+<div class="text-column">
+   <h1 id="unique-title">Synopsis</h1>
+        <p>Nearing the end of his life, Adolph Gasser looks back on a seventy-year career as a world-class camera repairman, WWII veteran, inventor, and best friend of nature photographer Ansel Adams, contributing developer of the first Nikon camera and a sales/rental/camera repair store owner who empowered other prominent Bay Area visual artists and inventors to succeed. As eminent domain, the internet and changing technologies threaten everything he has built, he struggles to find a way to keep moving forward. Inspired by his unique stories and abilities, filmmaker and professor John C. Aliano follows him over the course of several years and reflects on his own career trajectory. 
+            Ultimately, he learns the greatest accomplishment of the film's namesake is Being Adolph Gasser.
+        </p>
+  </div>
+
+                
+</div>   
+   
+       
+ 
+ 
+
+
+
+   <div class="container-home">
+  
+
+                <div class="text-column">
+  <h1 id="unique-title">Meet the Crew</h1>
+    <p>
+      Get to know the passionate team behind the making of "Being Adolph Gasser". Our small but dedicated team brings together a wealth of experience, creativity, and a deep commitment to capturing the essence of Adolph Gasser's legacy. 
+ 
+        
+        <br><br><a href="/bios/" class="text-link">Learn More &rarr;</a></p>
+  </div>
+
+              <div class="image-column">
+    <img src="CrewHomePage.png" alt="meet the crew"> 
+  </div>
+
+       
+</div>     
+       
+       
+       
+       
+       
+       
+   <!-- BACKGROUND IMAGE -->   
+       
+       
+       
+
+    <div class="feature-section">
+        <div class="feature-overlay"></div>
+        <div class="feature-image"></div>
+        <div class="feature-text">
+            <p>
+            
+            
+                
+            </p>
+                
+                
+    </div>
+
+       
+       </div>
+  
+        
+       
+<!-- Footer -->
+       
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Use</a><br>
+        
+            </div>
+            <div class="footer-column">
+               <p class="footer-title">Being Adolph Gasser</p>
+                
+            </div>
+            <div class="footer-column">
+            
+                <div class="social-icons">
+                    
+                    
+                           <a href="https://www.facebook.com/beingadolphgasser"><i class="fab fa-facebook"></i></a>
+         <a href="https://www.instagram.com/beingadolphgasser"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/BeingAdolphFilm"><i class="fab fa-twitter"></i></a>
+                
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-bar">
+        &copy; 2003 - 2024 John C. Aliano / Being Adolph Gasser. All Rights Reserved.
+    </div>
+    
+       
+
+    
+    
+       
+
+
+<script>
+  // JavaScript to show the loading spinner on link click
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.link').forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        // Show loading overlay and spinner
+        document.getElementById('loading-overlay').style.display = 'block';
+        document.getElementById('loading-spinner').style.display = 'block';
+        
+        // Set timeout to hide loading spinner after 2 seconds (2000 milliseconds)
+        setTimeout(() => {
+          document.getElementById('loading-overlay').style.display = 'none';
+          document.getElementById('loading-spinner').style.display = 'none';
+        }, 2000); // Hide after 2 seconds
+        
+        // Navigate to the clicked link after 2 seconds (2000 milliseconds)
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 2000); // Delay for 2 seconds before navigating
+      });
+    });
+  });
+</script>
+
+ <script>
+    $(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+
+
+
+
+    
+<script>
+
+ window.onload = function() {
+    var music = document.getElementById("background-music");
+    var unmutedIcon = document.getElementById("unmuted-icon");
+    var mutedIcon = document.getElementById("muted-icon");
+    var startMusicButton = document.getElementById("start-music");
+
+    // Attempt to play music on page load
+    music.play().then(function() {
+        startMusicButton.style.display = 'none'; // Hide the button if music plays successfully
+    }).catch(function(error) {
+        console.log("Autoplay was prevented. User interaction is required.");
+        // Optionally, you can show a message to prompt the user to click the button
+    });
+
+    // Function to start music and hide button
+    window.startMusic = function() {
+        music.play().then(function() {
+            startMusicButton.style.display = 'none'; // Hide the button after starting music
+        }).catch(function(error) {
+            console.log("Error playing music:", error);
+        });
+    };
+
+    // Function to toggle mute/unmute
+    window.toggleMute = function() {
+        if (music.muted) {
+            music.muted = false;
+            unmutedIcon.classList.add("active");
+            mutedIcon.classList.remove("active");
+        } else {
+            music.muted = true;
+            unmutedIcon.classList.remove("active");
+            mutedIcon.classList.add("active");
+        }
+    };
+
+    // Set the initial state
+    unmutedIcon.classList.add("active");
+    mutedIcon.classList.remove("active");
+
+    // Hide the start music button after 60 seconds
+    setTimeout(function() {
+        startMusicButton.style.display = 'none';
+    }, 60000);
+};
+
+
+</script>   
+    
+</body>
+    
+</html>
+
+
+
+
+
+    
+    
