@@ -1149,7 +1149,7 @@ color: darkgrey;
     background-image: url('use-cover.jpg');
     height: 100%;
     width: 100%;
-    background-position: center;
+background-position-y: -95px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1158,6 +1158,13 @@ color: darkgrey;
     right: 0;
     bottom: 0;
     opacity: 0.5; 
+}
+
+
+@media (max-width: 768px) {
+.cover-image-terms {
+background-position: center;
+}
 }
 
 
