@@ -1130,7 +1130,7 @@ color: darkgrey;
 
 
 .cover-image-bios {
-    background-image: url('Bio-JohnJackie.jpg');
+    background-image: url('bios-cover.jpg');
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1179,7 +1179,7 @@ color: darkgrey;
 
 
 .cover-image-updates {
-    background-image: url('update-cover.jpg');
+    background-image: url('updates-cover2.jpg');
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1196,7 +1196,7 @@ color: darkgrey;
 
 
 .cover-image-festivals {
-    background-image: url('festivals-cover.jpg');
+    background-image: url('update-cover.jpg');
     height: 100%;
     width: 100%;
     background-position: center;
