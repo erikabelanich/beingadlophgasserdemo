@@ -1089,13 +1089,6 @@ color: darkgrey;
     overflow: hidden; 
 }
 
-@media (max-width: 768px) {
-    .cover-image-contact {
-        height: 25vh;
-        text-align: center;
-        overflow: hidden; 
-    }
-}
 
 .cover-image-contact {
     background-image: url('Cover2.jpg');
@@ -1112,18 +1105,6 @@ color: darkgrey;
     bottom: 0;
     opacity: 0.5; 
 }
-
-@media (max-width: 768px) {
-    .cover-image-contact {
-        background-image: url('contact-mobile.jpg');
-     background-size: contain;
-     background-position: top;
-    }
-}
-
-
-
-
 
 
 
@@ -1144,16 +1125,6 @@ color: darkgrey;
 }
 
 
-@media (max-width: 768px) {
-    .cover-image-bios {
-        background-image: url('Bios-2025-Mobile.png');
-     background-size: contain;
-     background-position: top;
-    }
-}
-
-
-
 .cover-image-terms {
     background-image: url('use-cover.jpg');
     height: 100%;
@@ -1168,14 +1139,6 @@ color: darkgrey;
     right: 0;
     bottom: 0;
     opacity: 0.5; 
-}
-
-@media (max-width: 768px) {
-    .cover-image-terms {
-        background-image: url('use-mobile.jpg');
-     background-size: contain;
-     background-position: top;
-    }
 }
 
 
@@ -1193,14 +1156,6 @@ color: darkgrey;
     right: 0;
     bottom: 0;
     opacity: 0.5; 
-}
-
-@media (max-width: 768px) {
-    .cover-image-privacy {
-        background-image: url('privacy-mobile.jpg');
-     background-size: contain;
-     background-position: top;
-    }
 }
 
 
@@ -1221,16 +1176,6 @@ color: darkgrey;
     opacity: 0.5; 
 }
 
-@media (max-width: 768px) {
-    .cover-image-updates {
-        background-image: url('updates-mobile.png');
-     background-size: contain;
-     background-position: top;
-    }
-}
-
-
-
 
 
 .cover-image-festivals {
@@ -1249,13 +1194,6 @@ color: darkgrey;
     opacity: 0.5; 
 }
 
-@media (max-width: 768px) {
-    .cover-image-festivals {
-        background-image: url('festivals-mobile.jpg');
-     background-size: contain;
-     background-position: top;
-    }
-}
 
 
 
