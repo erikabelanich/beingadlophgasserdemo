@@ -1104,11 +1104,11 @@ color: darkgrey;
     pointer-events: none;
 }
 
-/* Content sits ABOVE the overlay */
+/* Content sits ABOVE the overlay
 .cover-container > * {
     position: relative;
     z-index: 2;
-}
+}*/
 
 
 
