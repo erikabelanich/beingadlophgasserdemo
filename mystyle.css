@@ -1090,6 +1090,28 @@ color: darkgrey;
 }
 
 
+.cover-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.4) 40%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Content sits ABOVE the overlay */
+.cover-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
 .cover-image-contact {
     background-image: url('Cover2.jpg');
     height: 100%;
@@ -1097,7 +1119,6 @@ color: darkgrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
@@ -1115,7 +1136,6 @@ color: darkgrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
@@ -1132,7 +1152,6 @@ color: darkgrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
@@ -1149,7 +1168,6 @@ color: darkgrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
@@ -1167,7 +1185,6 @@ color: darkgrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
@@ -1185,7 +1202,6 @@ color: darkgrey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     top: 0;
     left: 0;
