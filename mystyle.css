@@ -1143,6 +1143,7 @@ color: darkgrey;
     opacity: 0.5; 
 }
 
+
 @media (max-width: 768px) {
     .cover-image-bios {
         background-image: url('Bios-2025-Mobile.png');
