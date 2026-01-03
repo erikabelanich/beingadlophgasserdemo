@@ -1128,7 +1128,7 @@ color: darkgrey;
 
 
 .cover-image-bios {
-    background-image: url('Bio-JohnJackie.jpg');
+    background-color:#151515;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1145,7 +1145,7 @@ color: darkgrey;
 
 @media (max-width: 768px) {
     .cover-image-bios {
-        background-image: url('Bios-2025-Mobile.png');
+      background-color:#151515;
      background-size: contain;
      background-position: top;
     }
@@ -1154,7 +1154,7 @@ color: darkgrey;
 
 
 .cover-image-terms {
-    background-image: url('use-cover.jpg');
+    background-color:#151515;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1171,7 +1171,7 @@ color: darkgrey;
 
 @media (max-width: 768px) {
     .cover-image-terms {
-        background-image: url('use-mobile.jpg');
+      background-color:#151515;
      background-size: contain;
      background-position: top;
     }
@@ -1179,7 +1179,7 @@ color: darkgrey;
 
 
 .cover-image-privacy {
-    background-image: url('privacy-cover.jpg');
+     background-color:#151515;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1196,7 +1196,7 @@ color: darkgrey;
 
 @media (max-width: 768px) {
     .cover-image-privacy {
-        background-image: url('privacy-mobile.jpg');
+      background-color:#151515;
      background-size: contain;
      background-position: top;
     }
@@ -1205,7 +1205,7 @@ color: darkgrey;
 
 
 .cover-image-updates {
-    background-image: url('update-cover.jpg');
+     background-color:#151515;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1222,7 +1222,7 @@ color: darkgrey;
 
 @media (max-width: 768px) {
     .cover-image-updates {
-        background-image: url('updates-mobile.png');
+      background-color:#151515;
      background-size: contain;
      background-position: top;
     }
@@ -1233,7 +1233,7 @@ color: darkgrey;
 
 
 .cover-image-festivals {
-    background-image: url('festivals-cover.jpg');
+     background-color:#151515;
     height: 100%;
     width: 100%;
     background-position: center;
@@ -1250,7 +1250,7 @@ color: darkgrey;
 
 @media (max-width: 768px) {
     .cover-image-festivals {
-        background-image: url('festivals-mobile.jpg');
+      background-color:#151515;
      background-size: contain;
      background-position: top;
     }
