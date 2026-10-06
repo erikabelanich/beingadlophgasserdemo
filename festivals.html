@@ -2,284 +2,326 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <meta name="description" content="Being Adolph Gasser">
-    <meta name="author" content="Erika Belanich">
-    <title>Being Adolph Gasser</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Being Adolph Gasser">
+  <meta name="author" content="Erika Belanich">
+  <title>Being Adolph Gasser</title>
 
-    <link rel="icon" href="favicon-1.png" type="image/x-icon">
-    
-    <!-- ======= FONTS & STYLES ======= -->  
-    <link rel="stylesheet" href="mystyle.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../favicon-1.png" type="image/x-icon">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+  <!-- ======= GLOBAL STYLES ======= -->
+  <link rel="stylesheet" href="../mystyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    
-    <!-- Bootstrap and jQuery (for demonstration) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    <style>
-.accordion-content {
-  display: none;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 30px;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
 
-.accordion-item {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-}
+  <!-- Bootstrap and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+  <!-- ======= FESTIVALS PAGE ONLY (MATCH UPDATES STYLE) ======= -->
+  <style>
+
+
+        @media (max-width: 768px) {
+            .container-festivals {
+                display: flex;
+                padding-top: 40px;
+                padding-bottom: 0px;
+                margin: 0 auto;
+            }
+        }
+        @media (min-width: 768px) {
+            .container-festivals {
+                display: flex;
+                padding-top: 80px;
+                padding-bottom: 0px;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+
+    .laurels-single {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+        .laurels-single img {
+            max-width: 100%;
+            height: auto;
+        }
 @media (min-width: 768px) {
-  .accordion-content {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+   .laurels-single img {
+            max-width: 40%;
+            height: auto;
+            }
+        }
 
-  .accordion-video {
-    flex: 0;
-    padding-right: 20px;
-  }
 
-  .accordion-text {
-    flex: 1;
-  }
-    .container-accordion{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin: 0 auto;
-    }
-}
+
 
     
-.accordion-title {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
+    .festivals-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 70px 20px 90px;
+    }
 
-.accordion-title h3 {
-  margin: 0;
-}
+    @media (max-width: 768px) {
+      .festivals-page { padding: 50px 16px 80px; }
+    }
 
-.accordion-content video {
-  width: 18em;
-  height: 32em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .festivals-page .section-eyebrow{
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #bdbdbd;
+      margin: 0 0 18px;
+      opacity: .9;
+    }
 
-.accordion .accordion-title .accordion-arrow {
-color: white;
-  margin-left: 10px;
-  font-size: 1.2em;
-  transform: rotate(0deg);
-  transition: transform 0.3s ease;
-}
+    /* Updates-style accordion list */
+    .festivals-page .updates-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
 
-.accordion-item.active .accordion-title .accordion-arrow {
-  transform: rotate(180deg);
-}
+    /* The top bar (matches Updates) */
+    .festivals-page .updates-row-btn{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
 
-.container-accordion {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        max-width: 80%;
-        margin: 0 auto;
-}
+      padding: 22px 26px;
+      border: 1px solid rgba(255,255,255,0.35);
+      background: transparent;
 
-.accordion-title h3{
-font-family: "Montserrat", sans-serif;
-    font-size: 18px !important;
-    font-weight: 400;
+      cursor: pointer;
+      text-align: left;
+
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .festivals-page .updates-row-btn{
+        font-size: 15px;
+        letter-spacing: 3px;
+        padding: 18px 18px;
+      }
+    }
+
+    /* triangle caret */
+    .festivals-page .caret-tri{
+      font-size: 18px;
+      line-height: 1;
+      color: #ffffff;
+      opacity: .9;
+      transform: rotate(0deg);
+      transition: transform .2s ease;
+      flex: 0 0 auto;
+    }
+    .festivals-page .accordion-item[data-open="true"] .caret-tri{
+      transform: rotate(180deg);
+    }
+
+    /* Collapsible panel wrapper */
+    .festivals-page .panel-wrap{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .25s ease;
+    }
+
+    /*
+      IMPORTANT FIX:
+      DO NOT use .panel (Bootstrap collision).
+      Use .fest-panel instead.
+    */
+    .festivals-page .fest-panel{
+      border: 1px solid rgba(255,255,255,0.35);
+      border-top: none;
+      padding: 26px;
+
+      background: transparent; /* keep dark theme */
+      color: rgba(255,255,255,0.85);
+    }
+    @media (max-width: 768px) {
+      .festivals-page .fest-panel{ padding: 18px; }
+    }
+
+    /* Festival layout */
+    .festivals-page .festival-grid{
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+    @media (max-width: 992px){
+      .festivals-page .festival-grid{
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .festivals-page .festival-img{
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 100%;
+      /* optional: add subtle border like updates cards */
+      border: 0;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .festivals-page .festival-title{
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffffff;
+      margin: 0 0 5px;
+      line-height: 1.15;
+    }
+    @media (max-width: 768px){
+      .festivals-page .festival-title{ font-size: 22px; letter-spacing: 3px; }
+    }
+
+    .festivals-page .festival-body{
+      font-family: "Montserrat", sans-serif;
+      color: rgba(255,255,255,0.85);
+      font-size: 16px;
+      line-height: 1.65;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .festivals-page .festival-links{
+      margin-top: 18px;
+      display: flex;
+      gap: 18px;
+       font-size: 15px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .festivals-page .festival-link{
+      font-family: "Montserrat", sans-serif;
+      color: #bdbdbd;
+      text-decoration: none;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    .festivals-page .festival-link:hover{
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .festivals-page .more-toggle{
+      background: transparent;
+      border: none;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+      color: #bdbdbd;
+      cursor: pointer;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    .festivals-page .more-toggle:hover{ color: #ffffff; }
+
+    .festivals-page .clamp[data-collapsed="true"]{
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    
+.h2, h2{
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      color: #ffffff;
+    }
+
+    /* Upcoming visible container */
+    .festivals-page .static-box{
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 26px;
+    }
+    @media (max-width: 768px){
+      .festivals-page .static-box{ padding: 18px; }
+    }
+
+
+.datelocation {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     text-transform: uppercase;
+    letter-spacing: 1px;
     color: #ffffff;
-    letter-spacing: 2px;
-    font-weight: 200;  
-        }
-
-
- .unique-link{
-        font-family: "Montserrat", sans-serif;
-        color: #868686;
-        text-decoration: none;
-        }
-        
-.unique-link:hover {
-    color: #ccc;
-            text-decoration: none;
-}
-
-#unique-title {
-        padding-bottom: 15px;
+    margin: 0 0 5px;
+    line-height: 1.15;
 }
 
 
-
-
-.custom-slider {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-}
-
-        
-
-.custom-slides img {
-  max-width: 380px; 
-  display: block;
-  max-height: 100%; 
-}
-
-@media (max-width: 768px) {
-  .custom-slides img {
-    width: 100%;
-    max-width: none;
-  }
-    .container-accordion {
-        max-width: 90%;
-}
-}
-
-.custom-prev, .custom-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -40px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.custom-next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.custom-prev:hover, .custom-next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.custom-dots {
-  text-align: center;
-  padding: 10px 0;
-}
-
-.custom-dot {
-  cursor: pointer;
-  height: 9px;
-  width: 9px;
-  margin: 0 2px;
-  background-color: #313131;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.custom-active, .custom-dot:hover {
-  background-color: #717171;
-}
-
-        .custom-slide {
-  display: none;
-}
-
-
-
-        
- 
-    </style>
-  
+    
+  </style>
 </head>
 
-<body> 
-
-
-
+<body>
 
   <!-- ======= NAVIGATION ======= -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="https://erikabelanich.github.io/beingadlophgasserdemo/">TAURUS ENTERTAINMENT</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="https://erikabelanich.github.io/beingadlophgasserdemo/">HOME</a></li>
-                    <li><a href="festivals.html" class="link">FILM FESTIVALS</a></li>
-                    <li><a href="bios.html">BIOS</a></li>
-                    
-<!-- HIDDEN DONATE   
-                 <li><a href="https://igg.me/at/BeingAdolphGasser/x/37984458#/" class="link">DONATE</a></li>
--->
-                    
-                    <!-- HIDDEN DROPDOWN             
-<li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li><a href="#">ARTICLES</a></li>
-        <li><a href="#">ARCHIVES</a></li>
-        <li><a href="#">AWARDS</a></li>
-        <li><a href="#">FILM FESTIVALS</a></li>
-    </ul>
-</li>
-    -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.beingadolphgasser.com/">TAURUS ENTERTAINMENT</a>
+      </div>
 
-                    
-<li><a href="updates.html" class="link">UPDATES</a></li>
-                    <li><a href="contact.html" class="link">CONTACT</a></li>
-                     <li class="socialmedia-icons">   
-                    <li class="special-items"><a href="https://www.facebook.com/beingadolphgasser"><i class="fab fa-facebook"></i></a></li>
-                    <li class="special-items"><a href="https://www.instagram.com/beingadolphgasser"><i class="fab fa-instagram"></i></a></li>
-                    <li class="special-items"><a href="https://x.com/BeingAdolphFilm"><i class="fab fa-twitter"></i></a></li>
-                
-                </li> </ul>
-            </div>
-        </div>
-    </nav>
-
-<script>
-    $(document).ready(function(){
-        $('.dropdown-toggle').dropdown();
-    });
-</script>
-
-       
- <!-- ======= COVER ======= -->  
-       
-       <div class="cover-container">
-        <div class="cover-image-festivals"></div>
-        <div class="cover-text">
-            <h1>FILM FESTIVALS</h1>
-        </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.beingadolphgasser.com/">HOME</a></li>
+          <li class="active"><a href="/festivals/" class="link">FILM FESTIVALS</a></li>
+          <li><a href="https://spectrum.rosco.com/lighting-the-documentary-being-adolph-gasser" class="link">BLOG</a></li>
+          <li><a href="/bios/">BIOS</a></li>
+          <li><a href="/updates/" class="link">UPDATES</a></li>
+          <li><a href="/contact/" class="link">CONTACT</a></li>
+          <li class="special-items"><a href="https://www.facebook.com/beingadolphgasser"><i class="fab fa-facebook"></i></a></li>
+          <li class="special-items"><a href="https://www.instagram.com/beingadolphgasser"><i class="fab fa-instagram"></i></a></li>
+          <li class="special-items"><a href="https://x.com/BeingAdolphFilm"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-
-
+  <!-- ======= COVER ======= -->
+  <div class="cover-container">
+    <div class="cover-image-festivals"></div>
+    <div class="cover-text">
+      <h1>FILM FESTIVALS</h1>
+    </div>
+  </div>
 
   <!-- ======= CONTENT ======= -->
 
@@ -571,43 +613,29 @@ IndieWood Film Festival showcases independent films from around the world. Bring
     })();
   </script>
 
-
-   <!-- Footer -->
-       
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Use</a><br>
-        
-            </div>
-            <div class="footer-column">
-               <p class="footer-title">Being Adolph Gasser</p>
-                
-            </div>
-            <div class="footer-column">
-            
-                <div class="social-icons">
-                    
-                    
-                           <a href="https://www.facebook.com/beingadolphgasser"><i class="fab fa-facebook"></i></a>
-         <a href="https://www.instagram.com/beingadolphgasser"><i class="fab fa-instagram"></i></a>
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a><br>
+      </div>
+      <div class="footer-column">
+        <p class="footer-title">Being Adolph Gasser</p>
+      </div>
+      <div class="footer-column">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/beingadolphgasser"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/beingadolphgasser"><i class="fab fa-instagram"></i></a>
           <a href="https://x.com/BeingAdolphFilm"><i class="fab fa-twitter"></i></a>
-                
-                    
-                    
-                </div>
-            </div>
         </div>
-    </footer>
-    <div class="copyright-bar">
-         &copy; 2003 - 2025 John C. Aliano / Being Adolph Gasser. All Rights Reserved.
+      </div>
     </div>
-    
-       
+  </footer>
 
-    
+  <div class="copyright-bar">
+    &copy; 2003 - 2026 John C. Aliano / Being Adolph Gasser. All Rights Reserved.
+  </div>
+
 </body>
-    
 </html>
-    
