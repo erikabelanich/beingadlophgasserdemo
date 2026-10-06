@@ -282,173 +282,295 @@ font-family: "Montserrat", sans-serif;
 
     <style>
 
-             /* === FESTIVALS LAYOUT === */
+  <!-- ======= CONTENT ======= -->
 
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #000;
-  color: #fff;
-}
 
-/* Container for the festivals section */
-.festivals-container {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-}
+ <div class="container-festivals">
+   <div class="laurels-single">  
+      <img src="../May2026.png" alt="Laurels">
+  </div>        
+</div>   
 
-/* Heading inside festivals section */
-.festivals-container h2 {
-  font-size: 23px;
-  text-align: left;
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
 
-/* Generic festival card */
-.event-card {
-  border: 1px solid #555;
-  padding: 15px;
-  margin-bottom: 20px;
-  background-color: #111;
-}
+  
+  <section class="festivals-page">
 
-/* Date line */
-.event-card .date {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
 
-/* Event name */
-.event-card .event-name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
+    <p class="section-eyebrow">Upcoming Festivals</p>
 
-/* Description text */
-.event-card .description {
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.5;
-}
+    <h2>No upcoming festivals at this time. Check back soon!</h2>
 
-/* === SPECIAL LAYOUT FOR CARD WITH IMAGE === */
-/* Add class: <div class="event-card event-card--with-image"> */
-
-.festivals-container .event-card--with-image .description {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-/* Image column */
-.festivals-container .event-card--with-image .image-column {
-  flex: 0 0 45%;     /* adjust to 40/50/etc if you want narrower/wider image */
-  max-width: 45%;
-}
-
-.festivals-container .event-card--with-image .image-column img {
-  width: 100%;       /* makes image fit its column */
-  height: auto;
-  display: block;
-}
-
-/* Text column */
-.festivals-container .event-card--with-image .text-column {
-  flex: 1;
-  line-height: 1.5;
-}
-
-/* === MOBILE: STACK IMAGE ON TOP, TEXT BELOW === */
-@media (max-width: 768px) {
-  .festivals-container {
-    width: 90%;
-  }
-
-  .festivals-container .event-card--with-image .description {
-    flex-direction: column;
-  }
-
-  .festivals-container .event-card--with-image .image-column,
-  .festivals-container .event-card--with-image .text-column {
-    max-width: 100%;
-    flex: 0 0 auto;
-  }
-
-  .festivals-container .event-card--with-image .image-column img {
-    width: 100%;
-  }
-}
-
-    </style>
+    <!-- HIDDEN 
+<div style="border: 1px solid rgba(255,255,255,0.35);">
+  <div class="updates-row-btn" style="cursor: default; border: none; border-bottom: 1px solid rgba(255,255,255,0.35);">
+    Indiewood Film Festival Hollywood 2026
+  </div>
+  <div class="fest-panel" style="border: none;">
+    <div class="festival-grid">
+      <img class="festival-img" src="../Indiewood.jpg" alt="Indiewood">
+      <div>
+        <p class="festival-body" id="upcoming-desc-1">
+          
+          <span class="datelocation">
+          
+          September 10-18, 2026 | TCL Chinese 6 Theatres   
+ </span><br>
+          6801 Hollywood Blvd, Hollywood, CA 90028<br>
+          Screening: Thursday, September 17, 2026 at 12PM | Theater 3, Block HHHH
+          <br><br>
+IndieWood Film Festival showcases independent films from around the world. Bringing filmmakers, audiences, and industry professionals together, it offers a platform to discover original stories, connect with emerging talent, and celebrate independent cinema.          <br><br>
+       
+        **Tickets available online or at the door**<br><br>
+        <div>
+            <a class="festival-link" href="https://www.indiewoodfilmfestival.com/" target="_blank">Learn More →</a><br>
+  <a class="festival-link" href="https://www.indiewoodfilmfestival.com/indiewood-tickets" target="_blank">Tickets →</a>
 
 
 
-</head>
-<body>
+            
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
 
 
-        
- <!-- ======= FESTIVALS ======= --> 
+<br><br>
 
+    <!-- PAST (ACCORDION) -->
+    <p class="section-eyebrow">Past Festivals</p>
 
-    
-       <div class="festivals-container">
-           <h1 id="unique-title">Upcoming Events</h1>
-           
-    <div class="event-card">
-            <div class="event-name">DOCUTAH Festival 2026</div>
-            <div class="date">February 26 - 28, 2026 | St. George, Utah</div>
-            <div class="description">Founded at Utah Tech University by Emmy-winning filmmaker Phil Tuckett, presents new documentary films in the stunning natural setting of St. George, Utah.<br><br>
-                <a href="https://docutah.com/" class="text-link">Festival Information &rarr;</a></p></div>
- </div>
+    <div class="updates-accordion">
 
+<!-- Item 3 -->
+<div class="accordion-item" data-open="false">
 
-           
-         
-        <!--  <div class="event-card">
-            <div class="date">April 5</div>
-            <div class="event-name">Film Festival Name</div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <button class="updates-row-btn js-acc-toggle" type="button" aria-expanded="false">
+    Indiewood Film Festival Hollywood 2026
+    <span class="caret-tri">▼</span>
+  </button>
+
+  <div class="panel-wrap" aria-hidden="true">
+
+    <div class="fest-panel">
+
+      <div class="festival-grid">
+
+        <!-- LEFT IMAGE -->
+       <img class="festival-img" src="../Indiewood.jpg" alt="Indiewood">
+
+        <!-- RIGHT TEXT -->
+        <div>
+
+          <h3 class="festival-title">Thursday, September 17, 2026 at 12PM | TCL Chinese 6 Theatres </h3>
+
+          <p class="festival-body clamp" data-collapsed="true" id="past-desc-2">
+             6801 Hollywood Blvd, Hollywood, CA 90028<br>
+          Screening: Thursday, September 17, 2026 at 12PM | Theater 3, Block HHHH
+            <br><br>
+IndieWood Film Festival showcases independent films from around the world. Bringing filmmakers, audiences, and industry professionals together, it offers a platform to discover original stories, connect with emerging talent, and celebrate independent cinema.          <br><br>
+
+          </p>
+
+       <div class="festival-links">
+
+  <div>
+    <a class="festival-link" href="https://www.indiewoodfilmfestival.com/" target="_blank">Festival Details →</a>
+  </div>
+</div>
+
         </div>
-        <div class="event-card">
-            <div class="date">May 14</div>
-            <div class="event-name">Film Festival Name</div>
-            <div class="description">Lorem ipsum dolor sit amet, dolor sit amet. consectetur adipiscing elit.</div>
-        </div>
-        <div class="event-card">
-            <div class="date">May 30</div>
-            <div class="event-name">Film Festival Name</div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        </div> --> 
+
+      </div>
+
     </div>
 
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <br>
-    &nbsp;
-    &nbsp;
-    &nbsp;<br>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-       &nbsp;
-    &nbsp;
-    &nbsp;
-    <br>
-    &nbsp;
-    &nbsp;
-    &nbsp;<br>
-    &nbsp;
-    &nbsp;
-    &nbsp;
+  </div>
+</div>
+
+
+      
+<!-- Item 2 -->
+<div class="accordion-item" data-open="false">
+
+  <button class="updates-row-btn js-acc-toggle" type="button" aria-expanded="false">
+   Indie Vegas Film Festival 2026
+    <span class="caret-tri">▼</span>
+  </button>
+
+  <div class="panel-wrap" aria-hidden="true">
+
+    <div class="fest-panel">
+
+      <div class="festival-grid">
+
+        <!-- LEFT IMAGE -->
+       <img class="festival-img" src="../IndieVegas.jpg" alt="Indie Vegas Film Festival">
+
+        <!-- RIGHT TEXT -->
+        <div>
+
+          <h3 class="festival-title">Sunday, May 3, 2026 | Regal Aliante Stadium 16  </h3>
+
+          <p class="festival-body clamp" data-collapsed="true" id="past-desc-2">
+            7300 Aliante Parkway (Aliante Casino & Hotel)<br>
+          Screening: 4:00 PM | Theater 6 (Block TT) 
+            <br><br>
+          Indie Vegas Film Festival celebrates independent films and the people who make them. Bringing together new filmmakers and audiences, offering a chance to discover fresh talent and connect with the indie film scene.
+
+          </p>
+
+       <div class="festival-links">
+
+  <div>
+    <a class="festival-link" href="https://www.indievegasfilmfestival.com/" target="_blank">Festival Details →</a>
+  </div>
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+      <!-- Item 1 -->
+<div class="accordion-item" data-open="false">
+
+  <button class="updates-row-btn js-acc-toggle" type="button" aria-expanded="false">
+   DOCUTAH International Film Festival 2026
+    <span class="caret-tri">▼</span>
+  </button>
+
+  <div class="panel-wrap" aria-hidden="true">
+
+    <div class="fest-panel">
+
+      <div class="festival-grid">
+
+        <!-- LEFT IMAGE -->
+        <img class="festival-img" src="../DOCUTAH.jpg" alt="DOCUTAH selection graphic">
+
+        <!-- RIGHT TEXT -->
+        <div>
+
+          <h3 class="festival-title">February 26–28, 2026 | St. George, Utah</h3>
+
+          <p class="festival-body clamp" data-collapsed="true" id="past-desc-2">
+            Screening: Thursday, February 26 | 12:15 PM (MST) | Theater 4
+            <br><br>
+
+               Being Adolph Gasser has been selected by the DOCUTAH International Film Festival, Feb. 26–28, 2026, in St. George, Utah.
+            This was the first film festival I submitted it to and one of the best I have attended in the past. Come see the film in a great location with wonderful programmers.
+            <br><br>
+            In addition, one of my former students, Hisonni Johnson, had his Student Production Emmy Award–winning film,
+            <em>Legend Has It: The Remarkable Rise of Stephen McCain</em> (created in my Documentary II class at CSN) selected as well.
+            Teacher and student both showing films at the same festival! Now that is special...
+            <br><br>
+            — John C. Aliano, Producer/Director<br>
+          </p>
+
+       <div class="festival-links">
+
+  <div>
+    <a class="festival-link" href="https://docutah.com/" target="_blank">Festival Details →</a>
+  </div>
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- STARTS HERE -->
+     
+        
+
+    </div>
+  </section>
+
+  <!-- ======= JS ======= -->
+  <script>
+    // Accordion behavior
+    (function(){
+      const items = document.querySelectorAll('.festivals-page .accordion-item');
+
+      items.forEach(item => {
+        const btn = item.querySelector('.js-acc-toggle');
+        const wrap = item.querySelector('.panel-wrap');
+        const caret = item.querySelector('.caret-tri');
+
+        if (!btn || !wrap) return;
+
+        function setOpen(isOpen){
+          item.dataset.open = String(isOpen);
+          btn.setAttribute('aria-expanded', String(isOpen));
+          wrap.setAttribute('aria-hidden', String(!isOpen));
+
+          // caret symbol to match Updates vibe
+          if (caret) caret.textContent = isOpen ? '▲' : '▼';
+
+          // animate open/close
+          wrap.style.maxHeight = isOpen ? (wrap.scrollHeight + 'px') : '0px';
+        }
+
+        // init based on data-open
+        const initiallyOpen = item.dataset.open === 'true';
+        setOpen(initiallyOpen);
+
+        btn.addEventListener('click', () => {
+          const isOpen = item.dataset.open === 'true';
+          setOpen(!isOpen);
+        });
+
+        window.addEventListener('resize', () => {
+          const isOpen = item.dataset.open === 'true';
+          if (isOpen) wrap.style.maxHeight = wrap.scrollHeight + 'px';
+        });
+
+        item.__recalc = () => {
+          const isOpen = item.dataset.open === 'true';
+          if (isOpen) wrap.style.maxHeight = wrap.scrollHeight + 'px';
+        };
+      });
+    })();
+
+    // More/Less clamp toggles
+    (function(){
+      const buttons = document.querySelectorAll('.festivals-page .js-more');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetSel = btn.getAttribute('data-target');
+          const el = targetSel ? document.querySelector(targetSel) : null;
+          if (!el) return;
+
+          const collapsed = el.getAttribute('data-collapsed') === 'true';
+          el.setAttribute('data-collapsed', collapsed ? 'false' : 'true');
+          btn.textContent = collapsed ? 'Less' : 'More';
+
+          const item = btn.closest('.accordion-item');
+          if (item && typeof item.__recalc === 'function') item.__recalc();
+        });
+      });
+    })();
+  </script>
 
 
    <!-- Footer -->
